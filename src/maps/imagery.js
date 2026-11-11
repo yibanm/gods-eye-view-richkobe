@@ -13,7 +13,9 @@ export function createOsmImagery() {
 
 export function createEsriImagery() {
   return Cesium.ArcGisMapServerImageryProvider.fromUrl(
-    'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',
+    // server. serves the same World Imagery endpoint as services. and is not
+    // SNI-blocked in mainland China, where services. fails the TLS handshake.
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',
     {
       credit:
         'Powered by Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',

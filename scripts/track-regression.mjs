@@ -274,7 +274,7 @@ async function main() {
       // Exact HTTPS origins and image paths only: metadata, feature queries,
       // other providers, terrain and local/model resources continue normally.
       const knownImageryTile = request.method() === 'GET' && (
-        (url.origin === 'https://services.arcgisonline.com'
+        (url.origin === 'https://server.arcgisonline.com'
           && /^\/ArcGIS\/rest\/services\/World_Imagery\/MapServer\/tile\/\d+\/\d+\/\d+$/.test(url.pathname))
         || (url.origin === 'https://tile.openstreetmap.org'
           && /^\/\d+\/\d+\/\d+\.png$/.test(url.pathname))

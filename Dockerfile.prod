@@ -1,0 +1,39 @@
+# syntax=docker/dockerfile:1
+#
+# 生产镜像：预构建静态产物，用 `vite preview` 同时承载前端与全部 /api 代理
+# （server/providers 下 35 个 provider 均实现 configurePreviewServer，已实测
+# /api/launches 经后端出口返回真实数据）。区别于上游 Dockerfile 的 `npm run dev`
+# 开发服务器——preview 产物已压缩、启动快、内存低，是生产正道。
+# HOST/PORT 写死于 CMD；GEV_ALLOWED_HOSTS（自定义域名白名单）由平台注入，
+# 供 build/allowedHosts.js 的 host 校验放行（防 DNS rebinding，不可省略）。
+FROM node:24.22.2-slim@sha256:c86ecead9e55a5210ac1727de38a4ca840bf03dcaf34dc9749addbf383b1920c
+
+# Puppeteer 仅 QA 脚本用，跳过 ~150MB Chromium 下载（与上游一致）。
+ENV PUPPETEER_SKIP_DOWNLOAD=1
+
+# git：部分构建脚本与 npm test 需要（与上游 Dockerfile 一致，sharp 用预编译二进制）。
+RUN apt-get update && apt-get install -y --no-install-recommends git \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# 先装依赖利用层缓存，再复制源码构建。
+COPY package.json package-lock.json ./
+RUN npm ci
+
+COPY . .
+RUN npm run build
+
+# .gev-cache 是运行时文件缓存目录；平台 Volume 挂到此路径实现跨重启持久化。
+# 不以 root 运行（与上游一致）。
+RUN mkdir -p /app/.gev-cache && chown -R node:node /app
+USER node
+
+EXPOSE 4173
+
+# slim 无 curl，用 Node 内置 fetch 探活；127.0.0.1 是 IP，host 校验恒放行。
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+  CMD ["node", "-e", "fetch('http://127.0.0.1:4173/').then(r=>process.exit(r.ok?0:1),()=>process.exit(1))"]
+
+# CLI 显式传 host/port（优先级高于配置文件），不依赖 env 传递链。
+CMD ["node", "node_modules/vite/bin/vite.js", "preview", "--host", "0.0.0.0", "--port", "4173"]

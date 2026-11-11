@@ -236,8 +236,15 @@ export function createBrowserViteConfig({
       headers: BROWSER_HEADERS,
     },
     // The preview server serves the same documents, so it carries the same
-    // framing + CSP hardening (one constant, no drift).
-    preview: { headers: BROWSER_HEADERS },
+    // framing + CSP hardening (one constant, no drift). hostCheckPlugin reads
+    // preview.allowedHosts, so the same allowlist applies here or a custom
+    // domain gets a 403 from both the document and its /api routes.
+    preview: {
+      host: host || 'localhost',
+      port: parseInt(port, 10) || 4173,
+      allowedHosts: [...allowedHosts],
+      headers: BROWSER_HEADERS,
+    },
     define: {
       // vue-i18n holds the locale and catalogs; Core formats the messages
       // (src/ui/i18n.js), so the build drops vue-i18n's message compiler.
