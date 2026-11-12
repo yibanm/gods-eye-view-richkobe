@@ -15,6 +15,7 @@ import {
 import { realtimeInstructions } from './instructions.js';
 import { GEV_REALTIME_TOOLS, offeredTools } from './tools.js';
 import { chatSchema } from './chat.js';
+import { openAiApiBase } from './base.js';
 import { resolveOverpassUpstreams } from '../overpass/constants.js';
 import {
   preferCodexOAuth,
@@ -144,7 +145,7 @@ function realtimeSessionTools(tools, { overpass = false } = {}) {
 
 function createRealtimeTokenHandler({
   annotationGuidance,
-  endpoint = 'https://api.openai.com/v1/realtime/client_secrets',
+  endpoint = `${openAiApiBase()}/realtime/client_secrets`,
   fetchImpl = (...args) => fetch(...args),
   resolveApiKey = () => process.env.OPENAI_API_KEY,
   resolveOAuthAccessToken = () => readCodexOAuthAccessToken(),

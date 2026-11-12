@@ -40,19 +40,12 @@ function pin(event, panelId) {
   chrome.act('pin', panelId);
 }
 
-// The voice control, while a voice session presents one. It sits between the
-// location bar and the visual presets; the trays keep their elements when the
-// order changes.
+// The voice control card is hidden by default (user request): 'voice' is never
+// added to the dock order, so <VoiceControl> below never renders. The voice
+// feature itself stays wired — only its card is suppressed.
 const { view: voice } = storeToRefs(useVoiceStore());
-// Once voice has taken its place, the location bar stays first.
-let voiceShown = false;
 const dockOrder = computed(() => {
-  if (voice.value) voiceShown = true;
-  return voice.value
-    ? ['location', 'voice', 'control']
-    : voiceShown
-      ? ['location', 'control']
-      : ['control', 'location'];
+  return voice.value ? ['location', 'control'] : ['control', 'location'];
 });
 
 // Where the user pointed while a voice turn is live (PointerReticle).

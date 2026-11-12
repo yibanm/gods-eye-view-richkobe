@@ -5,6 +5,7 @@ import { invalidCalls } from '../common/textTools.js';
 import { textInstructions } from '../common/textInstructions.js';
 import { GEV_REALTIME_TOOLS, offeredTools } from './tools.js';
 import { resolveOverpassUpstreams } from '../overpass/constants.js';
+import { openAiApiBase } from './base.js';
 
 const object = (value) =>
   value && typeof value === 'object' && !Array.isArray(value);
@@ -132,7 +133,7 @@ export function createOpenAiChatHandler({
         return null;
       const overpass = overpassConfigured();
       return {
-        endpoint: 'https://api.openai.com/v1/chat/completions',
+        endpoint: `${openAiApiBase(environment)}/chat/completions`,
         headers: (key) => ({ Authorization: `Bearer ${key}` }),
         body: {
           model,

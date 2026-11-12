@@ -2,10 +2,10 @@ import { admitSameSiteRequest } from '../../../src/localRequestGate.mjs';
 
 /**
  * 反向代理部署开关（默认关，本地/LAN 行为完全不变）。
- * 设为 '1' 时：本服务明确处于受信任的反向代理（如 Cloudflare + 平台 nginx）之后，
- * 所有合法请求都必然携带 X-Forwarded-*/cf-ray 等转发头，故跳过「见代理头即拒」这条
+ * 设为 '1' 时：本服务处于受信任的反向代理（Cloudflare + 平台 nginx）之后，
+ * 合法请求必带 X-Forwarded-For、cf-ray 等转发头，故跳过「见代理头即拒」这条
  * 在反代下会误杀全部流量的规则，并用 X-Forwarded-Proto 推断真实协议。
- * 注意：CSRF 防护（Sec-Fetch-Site 校验 + Origin 精确匹配）始终保留，不受本开关影响。
+ * CSRF 防护（Sec-Fetch-Site 校验 + Origin 精确匹配）不受本开关影响，始终保留。
  */
 const TRUST_REVERSE_PROXY = process.env.GEV_TRUST_REVERSE_PROXY === '1';
 

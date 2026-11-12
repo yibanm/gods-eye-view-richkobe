@@ -32,8 +32,10 @@ USER node
 EXPOSE 4173
 
 # slim 无 curl，用 Node 内置 fetch 探活；127.0.0.1 是 IP，host 校验恒放行。
+# Render 注入 PORT=10000 并对该端口做健康检查，故探活端口跟随 $PORT。
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-  CMD ["node", "-e", "fetch('http://127.0.0.1:4173/').then(r=>process.exit(r.ok?0:1),()=>process.exit(1))"]
+  CMD ["sh", "-c", "node -e \"fetch('http://127.0.0.1:'+process.env.PORT+'/').then(r=>process.exit(r.ok?0:1),()=>process.exit(1))\""]
 
-# CLI 显式传 host/port（优先级高于配置文件），不依赖 env 传递链。
-CMD ["node", "node_modules/vite/bin/vite.js", "preview", "--host", "0.0.0.0", "--port", "4173"]
+# CLI 显式传 host；端口跟随平台注入的 PORT（Render=10000），本地回退 4173。
+# 不写死端口，否则 Render 健康检查打 PORT 而服务监听 4173 会失败。
+CMD ["sh", "-c", "node node_modules/vite/bin/vite.js preview --host 0.0.0.0 --port ${PORT:-4173}"]
