@@ -168,7 +168,8 @@ test('the NYC camera credit carries NYC DOT’s requested disclaimer', () => {
 test("the Houston camera credit names TranStar's terms and the permission they require", () => {
   const credit = DATA_CREDITS.find((entry) => entry.key === 'houston-cctv');
   assert.ok(credit, 'Houston TranStar camera frames must be credited');
-  assert.match(credit.html, /\(Houston, when enabled\)/);
+  // The label is localized; the legally required parts asserted below are not.
+  assert.match(credit.html, /（休斯敦，启用后）/);
   assert.ok(
     credit.html.includes(
       'href="https://traffic.houstontranstar.org/disclaimer.aspx"',

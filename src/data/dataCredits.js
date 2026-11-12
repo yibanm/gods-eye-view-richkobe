@@ -38,7 +38,7 @@ export const OPENMAPTILES_CREDIT = {
 export const ACARTIA_CREDIT = Object.freeze({
   key: 'acartia',
   html:
-    'Wildlife sightings: <a href="https://acartia.io" target="_blank" rel="noopener">Acartia</a> (CC BY 4.0; each provider credited per sighting) · ' +
+    '野生动物目击记录：<a href="https://acartia.io" target="_blank" rel="noopener">Acartia</a> (CC BY 4.0; each provider credited per sighting) · ' +
     '<a href="https://www.bewhalewise.org" target="_blank" rel="noopener">Be Whale Wise</a>',
 });
 
@@ -111,7 +111,7 @@ export const DATA_CREDITS = [
   {
     key: 'opensky',
     html:
-      'Flights: OpenSky Network — Schäfer et al., ' +
+      '航班：OpenSky Network — Schäfer et al., ' +
       '“Bringing Up OpenSky”, IPSN 2014 · ' +
       '<a href="https://opensky-network.org" target="_blank" rel="noopener">opensky-network.org</a> ' +
       '(non-commercial)',
@@ -119,14 +119,14 @@ export const DATA_CREDITS = [
   {
     key: 'adsblol',
     html:
-      'Military flights, aircraft traces, bounded regional flight fallback &amp; GNSS navigation integrity: ' +
+      '军用航班、飞机航迹、区域航班兜底与 GNSS 导航完整性：' +
       '<a href="https://adsb.lol" target="_blank" rel="noopener">adsb.lol</a> ' +
       '(ODbL 1.0)',
   },
   {
     key: 'adsbdb',
     html:
-      'Aircraft type, registration &amp; flight routes: ' +
+      '机型、注册号与航线：' +
       '<a href="https://www.adsbdb.com" target="_blank" rel="noopener">adsbdb</a> ' +
       '· aircraft data from PlaneBase · ICAO-to-N-number conversion by ' +
       'Guillaume Michel · route data is the work of ' +
@@ -137,27 +137,27 @@ export const DATA_CREDITS = [
   {
     key: 'planespotters',
     html:
-      'Aircraft photos: ' +
+      '飞机照片：' +
       '<a href="https://www.planespotters.net" target="_blank" rel="noopener">Planespotters.net</a> ' +
       '· each photo is © its photographer, credited beside it',
   },
   {
     key: 'aisstream',
     html:
-      'Live vessels (AIS): ' +
+      '实时船舶（AIS）：' +
       '<a href="https://aisstream.io" target="_blank" rel="noopener">AISStream.io</a>',
   },
   {
     key: 'celestrak',
     html:
-      'Satellites (TLEs and SATCAT): CelesTrak ' +
+      '卫星（TLE 与 SATCAT）：CelesTrak ' +
       '(<a href="https://celestrak.org" target="_blank" rel="noopener">celestrak.org</a>), ' +
       'Dr. T.S. Kelso',
   },
   {
     key: 'ucs-satellite-database',
     html:
-      'Satellite operators and purposes: ' +
+      '卫星运营方与用途：' +
       '<a href="https://www.ucsusa.org/satellite_database" target="_blank" rel="noopener">UCS Satellite Database</a> ' +
       '(UCS-Satellite-Database 5-1-2023), Union of Concerned Scientists',
   },
@@ -170,7 +170,7 @@ export const DATA_CREDITS = [
   {
     key: 'launch-library-2',
     html:
-      'Space mission launch, payload &amp; recovery metadata: ' +
+      '航天任务发射、载荷与回收元数据：' +
       '<a href="https://ll.thespacedevs.com/docs/" target="_blank" rel="noopener">Launch Library 2 — The Space Devs</a> ' +
       '(API documentation and rate limits)',
   },
@@ -181,21 +181,21 @@ export const DATA_CREDITS = [
   {
     key: 'openseamap',
     html:
-      'Sea marks overlay: ' +
+      '航标叠加：' +
       '<a href="https://www.openseamap.org" target="_blank" rel="noopener">© OpenSeaMap contributors</a> (CC BY-SA 2.0) · ' +
       'Data © OpenStreetMap contributors (ODbL)',
   },
   {
     key: 'opensnowmap',
     html:
-      'Ski pistes overlay: ' +
+      '滑雪道叠加：' +
       '<a href="https://www.opensnowmap.org" target="_blank" rel="noopener">© www.opensnowmap.org</a> (CC BY-SA) · ' +
       'Data © OpenStreetMap contributors (ODbL)',
   },
   {
     key: 'nasa-gibs',
     html:
-      'Recent imagery: We acknowledge the use of imagery provided by services from ' +
+      '近期影像：We acknowledge the use of imagery provided by services from ' +
       "NASA's Global Imagery Browse Services (GIBS), part of NASA's Earth Science " +
       'Data and Information System (ESDIS). ' +
       '<a href="https://gibs.earthdata.nasa.gov" target="_blank" rel="noopener">gibs.earthdata.nasa.gov</a> · ' +
@@ -204,7 +204,7 @@ export const DATA_CREDITS = [
   {
     key: 'wfigs',
     html:
-      'Wildfire perimeters: ' +
+      '野火边界：' +
       '<a href="https://data-nifc.opendata.arcgis.com/" target="_blank" rel="noopener">National Interagency Fire Center (WFIGS)</a>' +
       ' · Incident information: ' +
       '<a href="https://inciweb.wildfire.gov/" target="_blank" rel="noopener">InciWeb</a>',
@@ -212,85 +212,85 @@ export const DATA_CREDITS = [
   {
     key: 'faa-sua',
     html:
-      'Prohibited & restricted airspace: ' +
+      '禁区与限制空域：' +
       '<a href="https://adds-faa.opendata.arcgis.com/" target="_blank" rel="noopener">FAA Special Use Airspace</a>' +
       ' (prohibited and restricted zones; informational only)',
   },
   {
     key: 'inaturalist',
-    html: 'Wildlife sightings: <a href="https://www.inaturalist.org" target="_blank" rel="noopener">iNaturalist</a> contributors (licences per record; photos credited on each card)',
+    html: '野生动物目击记录：<a href="https://www.inaturalist.org" target="_blank" rel="noopener">iNaturalist</a> contributors (licences per record; photos credited on each card)',
   },
   OSM_CREDIT,
   OPENMAPTILES_CREDIT,
   {
     key: 'eccc-aqhi',
     html:
-      'Air quality (AQHI): Environment and Climate Change Canada — MSC GeoMet ' +
+      '空气质量（AQHI）：Environment and Climate Change Canada — MSC GeoMet ' +
       '(<a href="https://eccc-msc.github.io/open-data/" target="_blank" rel="noopener">eccc-msc.github.io/open-data</a>) ' +
       '· <a href="https://eccc-msc.github.io/open-data/licence/readme_en/" target="_blank" rel="noopener">ECCC Data Servers End-use Licence</a>',
   },
   {
     key: 'overture-military-names',
-    html: 'Military area names: <a href="https://overturemaps.org" target="_blank" rel="noopener">Overture Maps Foundation</a> (ODbL)',
+    html: '军事区域名称：<a href="https://overturemaps.org" target="_blank" rel="noopener">Overture Maps Foundation</a> (ODbL)',
   },
   {
     key: 'photon-geocoder',
-    html: 'Keyless place search: <a href="https://photon.komoot.io" target="_blank" rel="noopener">Photon</a> (komoot)',
+    html: '免密钥地点搜索：<a href="https://photon.komoot.io" target="_blank" rel="noopener">Photon</a> (komoot)',
   },
   {
     key: 'open-meteo',
     html:
-      'Cockpit current conditions: ' +
+      '座舱实时天气：' +
       '<a href="https://open-meteo.com/en/licence" target="_blank" rel="noopener">Weather data by Open-Meteo.com</a> ' +
       '(CC BY 4.0)',
   },
   {
     key: 'google-news-rss',
     html:
-      'Cockpit regional headlines: ' +
+      '座舱区域新闻：' +
       '<a href="https://policies.google.com/terms" target="_blank" rel="noopener">Google News RSS</a> ' +
       '(location-matched article links; publisher terms apply)',
   },
   {
     key: 'gdelt',
     html:
-      'Cockpit regional headlines: ' +
+      '座舱区域新闻：' +
       '<a href="https://www.gdeltproject.org/about.html" target="_blank" rel="noopener">GDELT Project</a> ' +
       '(location-matched article links; publisher terms apply)',
   },
   {
     key: 'austin-cctv',
     html:
-      'CCTV cameras &amp; frames: City of Austin, TX — ' +
+      '监控摄像头与画面：City of Austin, TX — ' +
       '<a href="https://data.austintexas.gov" target="_blank" rel="noopener">data.austintexas.gov</a>',
   },
   {
     key: 'txdot-cctv',
     html:
-      'CCTV cameras &amp; frames (Texas): ' +
+      '监控摄像头与画面（得克萨斯州）：' +
       '<a href="https://its.txdot.gov/" target="_blank" rel="noopener">Texas Department of Transportation</a> (courtesy)',
   },
   {
     key: 'deldot-cctv',
-    html: 'CCTV live video (Delaware): <a href="https://deldot.gov/map/" target="_blank" rel="noopener">DelDOT — Delaware Department of Transportation</a>',
+    html: '监控实时视频（特拉华州）：<a href="https://deldot.gov/map/" target="_blank" rel="noopener">DelDOT — Delaware Department of Transportation</a>',
   },
   {
     key: 'caltrans-cctv',
     html:
-      'CCTV cameras &amp; frames (California): Caltrans — ' +
+      '监控摄像头与画面（加利福尼亚州）：Caltrans — ' +
       '<a href="https://cwwp2.dot.ca.gov/" target="_blank" rel="noopener">cwwp2.dot.ca.gov</a>',
   },
   {
     key: 'tfl-cctv',
     html:
-      'CCTV cameras &amp; frames (London): ' +
+      '监控摄像头与画面（伦敦）：' +
       '<a href="https://tfl.gov.uk/info-for/open-data-users/" target="_blank" rel="noopener">Powered by TfL Open Data</a>. ' +
       'Contains OS data © Crown copyright and database rights.',
   },
   {
     key: 'ontario-511-cctv',
     html:
-      'CCTV cameras &amp; frames (Ontario): ' +
+      '监控摄像头与画面（安大略省）：' +
       '<a href="https://511on.ca/" target="_blank" rel="noopener">Ontario 511</a> ' +
       '(<a href="https://www.ontario.ca/page/open-government-licence-ontario" target="_blank" rel="noopener">Open Government Licence - Ontario</a>) ' +
       '· provided as is, without warranty; actual road conditions may differ',
@@ -298,7 +298,7 @@ export const DATA_CREDITS = [
   {
     key: 'fintraffic-cctv',
     html:
-      'CCTV cameras &amp; frames (Finland): Fintraffic / ' +
+      '监控摄像头与画面（芬兰）：Fintraffic / ' +
       '<a href="https://www.digitraffic.fi/en/" target="_blank" rel="noopener">digitraffic.fi</a>, ' +
       'license CC BY 4.0',
   },
@@ -308,13 +308,13 @@ export const DATA_CREDITS = [
       // Opt-in: the camera endpoints are the eismoinfo.lt website backend, not
       // among the services Via Lietuva's open-data statement lists (its
       // conditions: attribution, reuse on the same terms).
-      'Road-camera stills (Lithuania, when enabled): ' +
+      '道路摄像头静态图（立陶宛，启用后）：' +
       '<a href="https://eismoinfo.lt/" target="_blank" rel="noopener">Via Lietuva / Eismoinfo</a>; periodically updated images',
   },
   {
     key: 'taiwan-cctv',
     html:
-      'Freeway camera stills (Taiwan): ' +
+      '高速公路摄像头静态图（台湾）：' +
       '<a href="https://www.freeway.gov.tw/" target="_blank" rel="noopener">Freeway Bureau, MOTC</a>, ' +
       'CCTV static data (MOTC 2.0), released under the ' +
       '<a href="https://data.gov.tw/license" target="_blank" rel="noopener">Open Government Data License, Taiwan (Version 1.0)</a>',
@@ -322,13 +322,13 @@ export const DATA_CREDITS = [
   {
     key: 'ottawa-cctv',
     html:
-      'Traffic cameras (Ottawa, with an access certificate): ' +
+      '交通摄像头（渥太华，需访问证书）：' +
       '<a href="https://traffic.ottawa.ca/en/traffic-map-data-lists-and-resources/about-the-data" target="_blank" rel="noopener">City of Ottawa Traffic Camera Images API</a>',
   },
   {
     key: 'quebec-cctv',
     html:
-      'Camera locations (Québec): Ministère des Transports et de la Mobilité durable via ' +
+      '摄像头位置（魁北克）：Ministère des Transports et de la Mobilité durable via ' +
       '<a href="https://www.donneesquebec.ca/" target="_blank" rel="noopener">Données Québec</a> ' +
       '(<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>); ' +
       'Montréal camera locations © OpenStreetMap contributors (ODbL). ' +
@@ -338,14 +338,14 @@ export const DATA_CREDITS = [
   {
     key: 'tripcheck-cctv',
     html:
-      'Road camera stills (Oregon): camera courtesy of ODOT, via ' +
+      '道路摄像头静态图（俄勒冈州）：camera courtesy of ODOT, via ' +
       '<a href="https://www.tripcheck.com/" target="_blank" rel="noopener">TripCheck</a>; ' +
       'partner cameras (counties, cities, Caltrans, WSDOT) are named in the camera label',
   },
   {
     key: 'mlit-river-cctv',
     html:
-      'River camera stills (Japan): 出典：国土交通省 ' +
+      '河流摄像头静态图（日本）：出典：国土交通省 ' +
       '<a href="https://www.river.go.jp/" target="_blank" rel="noopener">川の防災情報</a> ' +
       '(Ministry of Land, Infrastructure, Transport and Tourism; ' +
       '<a href="https://www.river.go.jp/kawabou/kwb_apend/html/caution.html" target="_blank" rel="noopener">terms</a>), ' +
@@ -354,13 +354,13 @@ export const DATA_CREDITS = [
   {
     key: 'calgary-cctv',
     html:
-      'Traffic cameras (Calgary): contains information licensed under the ' +
+      '交通摄像头（卡尔加里）：contains information licensed under the ' +
       '<a href="https://data.calgary.ca/stories/s/Open-Calgary-Terms-of-Use/u45n-7awa" target="_blank" rel="noopener">Open Government Licence – City of Calgary</a>',
   },
   {
     key: 'florida-cctv',
     html:
-      'Traffic cameras (Florida): FL511, Florida Department of Transportation. ' +
+      '交通摄像头（佛罗里达州）：FL511, Florida Department of Transportation. ' +
       'Individual, personal use only under the ' +
       '<a href="https://fl511.com/privacy#disclaimer" target="_blank" rel="noopener">FL511 terms</a>; ' +
       "any other use needs FDOT's express written consent",
@@ -368,7 +368,7 @@ export const DATA_CREDITS = [
   {
     key: 'catalonia-cctv',
     html:
-      'CCTV cameras &amp; frames (Catalonia): ' +
+      '监控摄像头与画面（加泰罗尼亚）：' +
       '<a href="https://transit.gencat.cat/" target="_blank" rel="noopener">Servei Català de Trànsit</a> ' +
       '(Llicència oberta d’ús d’informació - Catalunya); some cameras are supplied by partners ' +
       '(Ajuntament de Barcelona, Ajuntament de Terrassa), each named in the CCTV panel',
@@ -376,7 +376,7 @@ export const DATA_CREDITS = [
   {
     key: 'iceland-cctv',
     html:
-      'CCTV cameras &amp; frames (Iceland): road camera images, fetched live, from the ' +
+      '监控摄像头与画面（冰岛）：road camera images, fetched live, from the ' +
       '<a href="https://www.vegagerdin.is/" target="_blank" rel="noopener">Icelandic Road and Coastal Administration (Vegagerðin)</a> — ' +
       '<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> ' +
       '(<a href="https://www.vegagerdin.is/vegagerdin/gagnasafn/vefthjonustur/terms-and-conditions" target="_blank" rel="noopener">terms</a>); ' +
@@ -385,7 +385,7 @@ export const DATA_CREDITS = [
   {
     key: 'kingcounty-cctv',
     html:
-      'CCTV cameras &amp; frames (King County, WA): King County Road Services — ' +
+      '监控摄像头与画面（华盛顿州金县）：King County Road Services — ' +
       '<a href="https://kingcounty.gov/en/dept/local-services/roads" target="_blank" rel="noopener">kingcounty.gov</a>, ' +
       'per the ' +
       '<a href="https://kingcounty.gov/en/dept/kcit/data-information-services/gis-center/about/terms-conditions-copyrights" target="_blank" rel="noopener">KCGIS Center terms</a>. ' +
@@ -394,7 +394,7 @@ export const DATA_CREDITS = [
   {
     key: 'houston-cctv',
     html:
-      'CCTV cameras &amp; frames (Houston, when enabled): ' +
+      '监控摄像头与画面（休斯敦，启用后）：' +
       '<a href="https://traffic.houstontranstar.org/cctv/transtar/" target="_blank" rel="noopener">Houston TranStar</a>. ' +
       "Copying, distributing or framing its images needs TxDOT's written permission under the " +
       '<a href="https://traffic.houstontranstar.org/disclaimer.aspx" target="_blank" rel="noopener">TranStar Content Usage terms</a>',
@@ -402,14 +402,14 @@ export const DATA_CREDITS = [
   {
     key: 'hk-cctv',
     html:
-      'Traffic snapshot cameras (Hong Kong): ' +
+      '交通快照摄像头（香港）：' +
       '<a href="https://data.gov.hk/en-data/dataset/hk-td-tis_2-traffic-snapshot-images" target="_blank" rel="noopener">Transport Department / DATA.GOV.HK</a> ' +
       '(<a href="https://data.gov.hk/en/terms-and-conditions" target="_blank" rel="noopener">Terms of Use</a> — attribution required)',
   },
   {
     key: 'webcamromania-cctv',
     html:
-      'Giroc camera (when configured): ' +
+      'Giroc 摄像头（配置后启用）：' +
       '<a href="https://webcamromania.ro/webcam-orase/webcam-giroc/" target="_blank" rel="noopener">Webcam Romania</a>. ' +
       'Video rights remain with the camera operator; ' +
       '<a href="https://webcamromania.ro/termeni-si-conditii/" target="_blank" rel="noopener">provider terms</a> apply.',
@@ -417,7 +417,7 @@ export const DATA_CREDITS = [
   {
     key: 'vegvesen-cctv',
     html:
-      'Road cameras (Norway): contains data under the ' +
+      '道路摄像头（挪威）：contains data under the ' +
       '<a href="https://data.norge.no/nlod/en/2.0" target="_blank" rel="noopener">Norwegian licence for Open Government data (NLOD)</a> ' +
       'distributed by Statens vegvesen · camera ground heights © ' +
       '<a href="https://kartverket.no/en/api-and-data/terrengdata" target="_blank" rel="noopener">Kartverket</a> ' +
@@ -427,43 +427,43 @@ export const DATA_CREDITS = [
   {
     key: 'nyc-cctv',
     html:
-      'CCTV cameras &amp; frames (New York City, when enabled): ' +
+      '监控摄像头与画面（纽约市，启用后）：' +
       '<a href="https://webcams.nyctmc.org/" target="_blank" rel="noopener">NYC DOT Traffic Management Center</a>. ' +
       NYC_DOT_DISCLAIMER,
   },
   {
     key: 'toronto-cctv',
     html:
-      'Traffic cameras (Toronto): contains information licensed under the ' +
+      '交通摄像头（多伦多）：contains information licensed under the ' +
       '<a href="https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-licence/" target="_blank" rel="noopener">Open Government Licence – Toronto</a>',
   },
   {
     key: 'mapillary',
-    html: 'Street Level: imagery © <a href="https://www.mapillary.com" target="_blank" rel="noopener">Mapillary</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>',
+    html: '街景：影像 © <a href="https://www.mapillary.com" target="_blank" rel="noopener">Mapillary</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>',
   },
   {
     key: 'google-street-view',
-    html: 'Street Level: Street View imagery © <a href="https://www.google.com/streetview/" target="_blank" rel="noopener">Google</a>',
+    html: '街景：Street View 影像 © <a href="https://www.google.com/streetview/" target="_blank" rel="noopener">Google</a>',
   },
   {
     key: 'kartaview',
-    html: 'Street Level: imagery © <a href="https://kartaview.org" target="_blank" rel="noopener">KartaView</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>',
+    html: '街景：影像 © <a href="https://kartaview.org" target="_blank" rel="noopener">KartaView</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>',
   },
   {
     key: 'panoramax',
-    html: 'Street Level: imagery © <a href="https://panoramax.fr" target="_blank" rel="noopener">Panoramax</a> contributors, licence per picture',
+    html: '街景：影像 © <a href="https://panoramax.fr" target="_blank" rel="noopener">Panoramax</a> contributors, 每张图片各自授权',
   },
   {
     key: 'a22-cctv',
     html:
-      'Motorway webcams (A22 Brennero–Modena): images © ' +
+      '高速公路网络摄像头（A22 Brennero–Modena）：images © ' +
       '<a href="https://www.autobrennero.it/" target="_blank" rel="noopener">Autostrada del Brennero S.p.A.</a>, ' +
       'camera list via the <a href="https://opendatahub.com/" target="_blank" rel="noopener">Open Data Hub</a> (NOI Techpark)',
   },
   {
     key: 'gbfs',
     html:
-      'Bikeshare availability: GBFS operator feeds ' +
+      '共享单车可用情况：GBFS operator feeds ' +
       '(e.g. Austin BCycle; Bike Share Toronto, operated by the Toronto Parking Authority; Bike Itaú and Tembici Bogotá, operated by Tembici; ' +
       'Bicing, Barcelona City Council (B:SM); AMBici, Àrea Metropolitana de Barcelona, operated by nextbike; ' +
       'BiciMAD, <a href="https://www.emtmadrid.es" target="_blank" rel="noopener">Powered by EMT de Madrid</a>; ' +
@@ -473,21 +473,21 @@ export const DATA_CREDITS = [
   {
     key: 'urbansharing-gbfs',
     html:
-      'City bikes (Norway): contains data under the ' +
+      '城市自行车（挪威）：contains data under the ' +
       '<a href="https://data.norge.no/nlod/en/2.0" target="_blank" rel="noopener">Norwegian licence for Open Government data (NLOD)</a> ' +
       'made available by Oslo Bysykkel, Bergen Bysykkel and Trondheim Bysykkel',
   },
   {
     key: 'entur-mobility-gbfs',
     html:
-      'City bikes (Stavanger, Skien/Porsgrunn): contains data under the ' +
+      '城市自行车（Stavanger、Skien/Porsgrunn）：contains data under the ' +
       '<a href="https://data.norge.no/nlod/en/2.0" target="_blank" rel="noopener">Norwegian licence for Open Government data (NLOD)</a> ' +
       'made available by Entur (Kolumbus Bysykkel, Farte Bysykkel)',
   },
   {
     key: 'jcdecaux-gbfs',
     html:
-      'City bikes (Lillestrøm, Valencia, Seville): Bysykkel Lillestrøm, Valenbisi, Sevici, JCDecaux — ' +
+      '城市自行车（Lillestrøm、Valencia、Seville）：Bysykkel Lillestrøm, Valenbisi, Sevici, JCDecaux — ' +
       '<a href="https://developer.jcdecaux.com/files/Open-Licence-fr.pdf" target="_blank" rel="noopener">Licence Ouverte</a>',
   },
   {
@@ -495,44 +495,44 @@ export const DATA_CREDITS = [
     // The service asks for its attribution to carry a "fix the map" link, so
     // a reader who spots a wrong turn can go and correct the data it came from.
     html:
-      'Routing (voice routes and Directions): OSRM on the FOSSGIS servers — ' +
+      '路线规划（语音路线与导航）：OSRM on the FOSSGIS servers — ' +
       '<a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener">routing.openstreetmap.de</a> · ' +
       '<a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">fix the map</a>',
   },
   {
     key: 'gtfs-rt',
-    html: 'Transit vehicles: operator GTFS-Realtime feeds (each operator is credited below when its vehicles are shown)',
+    html: '公共交通车辆：operator GTFS-Realtime feeds (each operator is credited below when its vehicles are shown)',
   },
   {
     key: 'radio-browser',
     html:
-      'Internet-radio station directory: ' +
+      '网络电台目录：' +
       '<a href="https://www.radio-browser.info/" target="_blank" rel="noopener">Radio Browser</a> ' +
       '(public domain; audio delivered directly by each broadcaster)',
   },
   {
     key: 'reearth-terrain',
     html:
-      'Terrain (keyless globe stacks): ' +
+      '地形（免密钥地球图层）：' +
       '<a href="https://terrain.reearth.land" target="_blank" rel="noopener">Re:Earth Terrain</a> / ' +
       'Mapterhorn (CC BY 4.0) / EGM2008 (NGA)',
   },
   {
     key: 'weather-noaa',
-    html: 'Observed weather: <a href="https://nowcoast.noaa.gov/" target="_blank" rel="noopener">NOAA nowCOAST</a> · NWS/OAR MRMS radar; NESDIS GOES and global satellite partners. <a href="https://oceanservice.noaa.gov/disclaimer.html" target="_blank" rel="noopener">Source disclaimer</a>.',
+    html: '观测天气：<a href="https://nowcoast.noaa.gov/" target="_blank" rel="noopener">NOAA nowCOAST</a> · NWS/OAR MRMS radar; NESDIS GOES and global satellite partners. <a href="https://oceanservice.noaa.gov/disclaimer.html" target="_blank" rel="noopener">Source disclaimer</a>.',
   },
   {
     key: 'weather-cyclones',
-    html: 'Cyclone advisories: <a href="https://www.nhc.noaa.gov/" target="_blank" rel="noopener">NOAA/NWS NHC / CPHC</a> · Atlantic and eastern/central North Pacific. Forecast center uncertainty, not storm size.',
+    html: '气旋预警：<a href="https://www.nhc.noaa.gov/" target="_blank" rel="noopener">NOAA/NWS NHC / CPHC</a> · Atlantic and eastern/central North Pacific. Forecast center uncertainty, not storm size.',
   },
   {
     key: 'weather-lightning',
-    html: 'Lightning density: NOAA/NWS nowCOAST · derived from Vaisala NLDN/GLD360. <a href="https://ocean.weather.gov/lightning/lightning_pdd.php" target="_blank" rel="noopener">Public derived density product</a>, not raw detections.',
+    html: '雷电密度：NOAA/NWS nowCOAST · derived from Vaisala NLDN/GLD360. <a href="https://ocean.weather.gov/lightning/lightning_pdd.php" target="_blank" rel="noopener">Public derived density product</a>, not raw detections.',
   },
   {
     key: 'wind-gfs',
     html:
-      'Wind: resampled NOAA Global Forecast System (GFS) 10 m wind via ' +
+      '风场：重采样的 NOAA Global Forecast System (GFS) 10 m wind via ' +
       '<a href="https://registry.opendata.aws/noaa-gfs-bdp-pds/" target="_blank" rel="noopener">NOAA Open Data on AWS</a> ' +
       '(U.S. public domain; forecast, not observations)',
   },
@@ -542,25 +542,25 @@ export const DATA_CREDITS = [
       'This service is based on data and products of the European Centre for Medium-Range Weather Forecasts (ECMWF). ' +
       '<a href="https://www.ecmwf.int/en/forecasts/datasets/open-data" target="_blank" rel="noopener">ECMWF Open Data</a> · ' +
       '<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. ' +
-      'Modified: resampled 10 m IFS forecast vectors and animated display. ' +
+      '已修改：重采样 10 m IFS forecast vectors and animated display. ' +
       'ECMWF does not accept any liability whatsoever for any error or omission in the data, their availability, or for any loss or damage arising from their use.',
   },
   // ── Bundled snapshots ───────────────────────────────────────────
   {
     key: 'sky-background',
     html:
-      'Stars: <a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/V/50" target="_blank" rel="noopener">Yale Bright Star Catalogue</a> ' +
-      '(Hoffleit &amp; Warren, via CDS). Milky Way: <a href="https://www.eso.org/public/images/eso0932a/" target="_blank" rel="noopener">ESO/S. Brunier</a> ' +
+      '星空：<a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/V/50" target="_blank" rel="noopener">Yale Bright Star Catalogue</a> ' +
+      '(Hoffleit &amp; Warren, via CDS). 银河：<a href="https://www.eso.org/public/images/eso0932a/" target="_blank" rel="noopener">ESO/S. Brunier</a> ' +
       '(<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>; stars removed, blurred and reprojected)',
   },
   {
     key: 'dams',
-    html: 'Dams: Open Infrastructure Map',
+    html: '水坝：Open Infrastructure Map',
   },
   {
     key: 'firms',
     html:
-      'Active fires: NASA FIRMS — we acknowledge the use of data and/or imagery ' +
+      '活跃火点：NASA FIRMS — we acknowledge the use of data and/or imagery ' +
       'from NASA’s Fire Information for Resource Management System ' +
       '(<a href="https://earthdata.nasa.gov/firms" target="_blank" rel="noopener">earthdata.nasa.gov/firms</a>), ' +
       'part of NASA’s Earth Observing System Data and Information System (EOSDIS)',
@@ -568,7 +568,7 @@ export const DATA_CREDITS = [
   {
     key: 's2-ghostmaps',
     html:
-      'S2 GhostMaps intel products: S2 Underground © by S2A1, ' +
+      'S2 GhostMaps 情报产品：S2 Underground © by S2A1, ' +
       '<a href="https://github.com/s2underground/GhostMaps" target="_blank" rel="noopener">github.com/s2underground/GhostMaps</a>, ' +
       'licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. ' +
       'Shown as published; reports are S2 assessments, not verified fact.',
@@ -576,7 +576,7 @@ export const DATA_CREDITS = [
   {
     key: 'news',
     html:
-      'News: every report is credited to its own publisher and links to the original article; ' +
+      '新闻：每条报道均署名 to its own publisher and links to the original article; ' +
       'pictures are the publishers’ own, shown from their sites with the publisher named. ' +
       'Places, categories, severity and English headlines are derived automatically, by ' +
       'bundled rules, the news provider or the configured news server, and can be wrong.',
@@ -585,7 +585,7 @@ export const DATA_CREDITS = [
     // GDELT's terms ask for a citation and a link.
     key: 'gdelt-news',
     html:
-      'News, Conflicts without a news server: events and page titles from the ' +
+      '新闻 · 冲突（未配置新闻服务器）：events and page titles from the ' +
       '<a href="https://www.gdeltproject.org/" target="_blank" rel="noopener">GDELT Project</a> ' +
       '(GDELT 2.0 events and GKG; places and categories are machine-coded)',
   },
@@ -594,21 +594,21 @@ export const DATA_CREDITS = [
     // its site; always listed, so a free-plan key is never shown without it.
     key: 'worldnewsapi',
     html:
-      'News, Local without a news server: headlines from ' +
+      '新闻 · 本地（未配置新闻服务器）：headlines from ' +
       '<a href="https://worldnewsapi.com/" target="_blank" rel="noopener">World News API</a>',
   },
   {
     key: 'shipwrecks',
     html:
-      'Shipwrecks (Europe): <a href="https://emodnet.ec.europa.eu/en/human-activities" target="_blank" rel="noopener">EMODnet Human Activities</a> ' +
+      '沉船（欧洲）：<a href="https://emodnet.ec.europa.eu/en/human-activities" target="_blank" rel="noopener">EMODnet Human Activities</a> ' +
       '(data originator AND-International, compiled from SHOM, Ireland&rsquo;s National Monuments Service, Historic England and the Oxford Roman Economy Project), ' +
       'licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>' +
-      ' · Shipwrecks (worldwide): <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0)',
+      ' · 沉船（全球）：<a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0)',
   },
   {
     key: 'drivebc-cctv',
     html:
-      'CCTV cameras &amp; frames (British Columbia): ' +
+      '监控摄像头与画面（不列颠哥伦比亚省）：' +
       '<a href="https://www.drivebc.ca/" target="_blank" rel="noopener">DriveBC</a>. ' +
       'Contains information licensed under the ' +
       '<a href="https://www2.gov.bc.ca/gov/content/data/open-data/open-government-licence-bc" target="_blank" rel="noopener">Open Government Licence – British Columbia</a>. ' +
@@ -617,7 +617,7 @@ export const DATA_CREDITS = [
   {
     key: 'wsdot-cctv',
     html:
-      'CCTV cameras &amp; frames (Washington State): ' +
+      '监控摄像头与画面（华盛顿州）：' +
       '<a href="https://wsdot.wa.gov/" target="_blank" rel="noopener">Washington State Department of Transportation</a> ' +
       '(<a href="https://wsdot.com/travel/real-time/cameras" target="_blank" rel="noopener">Travel Center</a>), ' +
       'used per the ' +
@@ -627,30 +627,30 @@ export const DATA_CREDITS = [
   {
     key: 'tallinn-cctv',
     html:
-      'CCTV cameras &amp; frames (Tallinn): City of Tallinn — ' +
+      '监控摄像头与画面（塔林）：City of Tallinn — ' +
       '<a href="https://ristmikud.tallinn.ee/" target="_blank" rel="noopener">ristmikud.tallinn.ee</a> (courtesy)',
   },
   {
     key: 'tarktee-cctv',
     html:
-      'CCTV cameras &amp; frames (Estonia road weather): Transpordiamet / Tarktee — ' +
+      '监控摄像头与画面（爱沙尼亚路面气象）：Transpordiamet / Tarktee — ' +
       '<a href="https://tarktee.transpordiamet.ee/" target="_blank" rel="noopener">tarktee.transpordiamet.ee</a> (courtesy)',
   },
   {
     key: 'warendorf-cctv',
-    html: 'Webcam (Warendorf): <a href="https://www.warendorf.de/" target="_blank" rel="noopener">Stadt Warendorf</a> (courtesy)',
+    html: '网络摄像头（Warendorf）：<a href="https://www.warendorf.de/" target="_blank" rel="noopener">Stadt Warendorf</a> (courtesy)',
   },
   {
     key: 'nsw-cctv',
     html:
-      'CCTV cameras &amp; frames (New South Wales): ' +
+      '监控摄像头与画面（新南威尔士州）：' +
       '<a href="https://www.livetraffic.com/" target="_blank" rel="noopener">Live Traffic NSW</a> — Transport for NSW ' +
       '(<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>)',
   },
   {
     key: 'telegeography',
     html:
-      'Submarine cables: © TeleGeography — ' +
+      '海底电缆：© TeleGeography — ' +
       '<a href="https://www.submarinecablemap.com" target="_blank" rel="noopener">submarinecablemap.com</a> ' +
       '(CC BY-NC-SA 3.0 — NonCommercial)',
   },
@@ -667,7 +667,7 @@ export const DATA_CREDITS = [
 export const TOMTOM_CREDIT = {
   key: 'tomtom',
   html:
-    'Traffic flow data © ' +
+    '交通流量数据 © ' +
     '<a href="https://www.tomtom.com" target="_blank" rel="noopener">TomTom</a>',
 };
 
@@ -676,7 +676,7 @@ export const TOMTOM_CREDIT = {
 export const LIVEUAMAP_CREDIT = {
   key: 'liveuamap',
   html:
-    'News, Conflicts: mapped reports from ' +
+    '新闻 · 冲突：地图化报道来自 ' +
     '<a href="https://liveuamap.com/" target="_blank" rel="noopener">Liveuamap</a>',
 };
 
@@ -685,7 +685,7 @@ export const LIVEUAMAP_CREDIT = {
 export const NATURAL_EARTH_CREDIT = {
   key: 'natural-earth',
   html:
-    'Country, state/province and physical region boundaries from ' +
+    '国家、州/省与自然区域边界来自 ' +
     '<a href="https://www.naturalearthdata.com" target="_blank" rel="noopener">Natural Earth</a> (public domain)',
 };
 
@@ -694,7 +694,7 @@ export const NATURAL_EARTH_CREDIT = {
 export const US_CENSUS_CREDIT = {
   key: 'us-census-counties',
   html:
-    'US county and place boundaries from the ' +
+    '美国县与地点边界来自 ' +
     '<a href="https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html" target="_blank" rel="noopener">U.S. Census Bureau</a> (public domain)',
 };
 
@@ -704,7 +704,7 @@ export const US_CENSUS_CREDIT = {
 export const WOF_CREDIT = {
   key: 'wof-neighborhoods',
   html:
-    'Neighborhood boundaries: ' +
+    '街区边界：' +
     '<a href="https://whosonfirst.org/docs/licenses/" target="_blank" rel="noopener">Who\'s On First</a> and contributors, simplified (' +
     '<a href="https://github.com/bilawalsidhu/gods-eye-view/blob/main/src/data/local_data/wof_neighborhoods/ATTRIBUTION.md" target="_blank" rel="noopener">sources and licences</a>)',
 };
@@ -713,7 +713,7 @@ export const WOF_CREDIT = {
 export const OSM_PLACES_CREDIT = {
   key: 'osm-places',
   html:
-    'Places found by voice: ' +
+    '语音搜索到的地点：' +
     '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a> ' +
     '(ODbL 1.0)',
 };
@@ -763,7 +763,7 @@ export function transitFeedCredit(feed, snapshot = null) {
 export const BHOTE_KOSHI_CREDIT = {
   key: 'bhote-koshi-2026',
   html:
-    'Bhote Koshi 2026 event imagery and derived reconstruction: ' +
+    'Bhote Koshi 2026 事件影像与衍生重建：' +
     '<a href="https://vantor.com/company/open-data-program" target="_blank" rel="noopener">Vantor Open Data</a> ' +
     'and <a href="https://github.com/geo-pera/bhotekoshi-2026-reconstruction" target="_blank" rel="noopener">GeoPera</a> ' +
     '(CC BY-NC 4.0); terrain © Re:Earth / Mapterhorn (CC BY 4.0)',
@@ -773,7 +773,7 @@ export const BHOTE_KOSHI_CREDIT = {
 export const BHOTE_KOSHI_LOCATOR_CREDIT = {
   key: 'bhote-koshi-locator',
   html:
-    'Flood corridor derived from the ' +
+    '洪水走廊派生自 ' +
     '<a href="https://github.com/geo-pera/bhotekoshi-2026-reconstruction/blob/main/vectors/river_centerline.geojson" target="_blank" rel="noopener">GeoPera river centerline</a> ' +
     '(CC BY-NC 4.0)',
 };
